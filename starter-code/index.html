@@ -1,55 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Officelite coming soon site</title>
-</head>
-<body> 
-  A simple solution to complex tasks is coming soon
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Officelite coming soon site</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img
+          src="/starter-code/assets/shared/logo.svg"
+          class="logo"
+          alt="Logo"
+        />
+      </header>
+      <main>
+        <section class="information">
+          <a href="index.html"
+            ><img
+              src="/starter-code/assets/home/illustration-charts.svg"
+              alt=""
+          /></a>
+          <div class="information__text">
+            <h1>A simple solution to complex tasks is coming soon</h1>
 
-  Say goodbye to inefficient juggling of multiple apps, teams, and projects. Officelite is the new 
-  collaboration platform built with an intuitive interface to improve productivity.
+            <p>
+              Say goodbye to inefficient juggling of multiple apps, teams, and
+              projects. Officelite is the new collaboration platform built with
+              an intuitive interface to improve productivity.
+            </p>
+            <a href="" class="btn">Get Started</a>
+          </div>
+        </section>
+        <br />
+        <br />
+        <section>
+          <div class="cards">
+            <div class="card">
+              <div class="card__body">
+                <div class="card__head">
+                  <h3>Basic</h3>
+                  <h1>Free</h1>
+                  <p>Up to 5 users for free</p>
+                </div>
+                <div card="card__body">
+                  <p>Basic document collaboration</p>
+                  <p>2 gb storage</p>
+                  <p>Great security and support</p>
+                </div>
+                <div class="card__footer">
+                  <a href="" class="btn__cyan">Try for Free</a>
+                </div>
+              </div>
+            </div>
+            <div class="card blue__card " >
+              <div class="card__body text__white">
+                <div class="card__head text__white">
+                  <h3>Pro</h3>
+                  <h1>$9.99</h1>
+                  <p>Per user, billed monthly</p>
+                </div>
+                <div card="card__body ">
+                  <p>All essential integrations</p>
+                  <p>50 gb storage</p>
+                  <p>storage More control and insights</p>
+                </div>
+                <div class="card__footer">
+                  <a href="" class="btn__white">Try for Free</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__body">
+                <div class="card__head">
+                  <h3>Ultimate</h3>
+                  <h1>$19.99</h1>
+                  <p>Per user, billed monthly</p>
+                </div>
+                <div card="card__body">
+                  <p>Robust work management</p>
+                  <p>100 gb storage</p>
+                  <p>VIP support</p>
+                </div>
+                <div class="card__footer">
+                  <a href="" class="btn__cyan">Try for Free</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
 
-  Get Started
+      <footer>
+        <div class="container"><!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
+       
+          <div class="footer__text">
+          <p>Coming <span>4 Nov 2020</span></p>
+        </div>
+        <div class="footer__cards">
+          <div class="footer__card">
+            <h1>47</h1>
+            <p>Days</p>
+          </div>
+          <div class="footer__card">
+            <h1>07</h1>
+            <p>Hours</p>
+          </div>
+          <div class="footer__card">
+            <h1>56</h1>
+            <p>Min</p>
+          </div>
+          <div class="footer__card">
+            <h1>14</h1>
+            <p>Sec</p>
+          </div>
+        </div>
+        <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
+        </div>   
+          <a class="btn m" href="">Get Started</a>   
 
-  Basic
-  Free
-  Up to 5 users for free
-  Basic document collaboration
-  2 gb storage
-  Great security and support
-  Try for Free
-
-  Pro
-  $9.99
-  Per user, billed monthly
-  All essential integrations
-  50 gb storage
-  More control and insights
-  Try for Free
-
-  Ultimate
-  $19.99
-  Per user, billed monthly
-  Robust work management
-  100 gb storage
-  VIP support
-  Try for Free
-
-  <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-  Coming 4 Nov 2020
-
-  <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-  47 Days
-  07 Hours
-  56 Min
-  14 Sec
-  Get Started
-
-  <img src="/starter-code/assets/shared/logo.svg" style="width: 200px;" alt="">
-</body>
+      </footer>
+      <div class="bg__header"></div>
+      <div class="bg__footer"></div>
+  </body>
 </html>
