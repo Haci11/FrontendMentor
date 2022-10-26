@@ -52,6 +52,7 @@ header {
   width: 458px;
   height: 458px;
   margin: 0 auto;
+  z-index: -1;
 }
 .information {
   display: flex;
@@ -69,7 +70,7 @@ header {
   font-size: 2rem;
   color: var(--dark-text);
   margin-bottom: 2rem;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 40px;
   line-height: 48px;
 }
@@ -117,16 +118,13 @@ header {
 }
 
 .blue--card {
-  background-color: var(--btn-blue) !important;  /* Important needed to change the background or else it wont change  */
+  background-color: var(
+    --btn-blue
+  ) !important; /* Important needed to change the background or else it wont change  */
   background-image: url(/starter-code/assets/home/bg-pattern-pricing.svg);
   background-repeat: no-repeat;
   width: 300px;
   background-position: -16rem -30rem;
-}
-
-.card__body .white {
-  color: var(--white) !important;
-  opacity: 0.2;
 }
 
 .cards {
@@ -148,7 +146,7 @@ header {
 
 .card__head {
   color: var(--dark-text);
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .card__header {
@@ -197,28 +195,42 @@ footer {
 .footer__text {
   color: var(--white);
   font-size: 1rem;
-  font-weight: 700;
+  line-height: 48px;
+  font-weight: 900;
   text-align: center;
+  text-transform: uppercase;
   letter-spacing: 5px;
+  margin-bottom: 2rem;
 }
 
 .footer__text span {
   color: var(--btn-blue);
 }
-
+.black {
+  color: var(--dark-text);
+}
 .footer__cards {
   display: flex;
   justify-content: center;
   text-align: center;
+  width: 100%;
+  gap: 10px;
 }
 
 .footer__card {
   background-color: var(--dark-text);
-  padding: 0.75rem;
-  margin: 0.5rem;
+  padding: 1rem;
   border-radius: 10px;
   margin-bottom: 2rem;
+  font-weight: 900;
+  font-size: 1rem;
   color: var(--white);
+  text-transform: lowercase;
+}
+
+.footer--white {
+  background-color: var(--cyan-color);
+  color: var(--btn-blue);
 }
 
 .footer__card p {
