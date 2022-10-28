@@ -57,12 +57,33 @@
           <form class="form__container" action="submit">
             <input class="form__input" class="form__input" type="text" placeholder="Name">
             <input class="form__input" type="email" placeholder="Email Address">
-            <select class="opt" name="selected" id="selected">
-              <option value="Free"> Basic Pack free</option>
-              <option value=""> Pro Pack $9.99</option>
-              <option value="">Ultimate Pack $19.99</option>
-            </select>
-            <input class="form__input" type="text" placeholder="Name">
+            <div class="select-box">
+              <div class="options-container">
+
+      
+                <div class="option">
+                  <input type="radio" class="radio" id="free" name="category" />
+                  <label for="free"><span class="option__text">Free Pack</span>  <span class="gray">Free</span></label>
+                </div>
+      
+                <div class="option">
+                  <input type="radio" class="radio" id="pro" name="category" />
+                  <label for="pro"> <span class="option__text">Pro Pack</span><span class="gray">$9.99</span></label>
+                </div>
+      
+                <div class="option">
+                  <input type="radio" class="radio" id="ultimate" name="category" />
+                  <label for="ultimate"><span class="option__text">Ultimate Pack</span> <span class="gray">$19.99</span> </label>
+                </div>
+
+              </div>
+      
+              <div class="selected">
+                <label for="free " class="option__text">Basic Pack <span class="gray">Free</span></label>
+              </div>
+            </div>
+
+ 
             <input class="form__input" type="tel" placeholder="Phone Number">
             <input class="form__input" type="text" placeholder="Company">
             <button type="submit" class="btn btn--button">Get on the list</button>
@@ -71,9 +92,7 @@
       </main>
     </div>
     <footer class="Footer__singup">
-        <div class="container">
-
-        </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
