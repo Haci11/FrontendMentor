@@ -1,15 +1,17 @@
-const selected = document.querySelector(".selected");
-const optionsContainer = document.querySelector(".options-container");
+window.onload = function () {
+  const selected = document.querySelector(".selected");
+  const optionsContainer = document.querySelector(".options-container");
 
-const optionsList = document.querySelectorAll(".option");
+  const optionsList = document.querySelectorAll(".option");
 
-selected.addEventListener("click", () => {
-  optionsContainer.classList.toggle("active");
-});
-
-optionsList.forEach(e => {
-  o.addEventListener("click", () => {
-    selected.innerHTML = e.querySelector("label").innerHTML;
-    optionsContainer.classList.remove("active");
+  selected.addEventListener("click", () => {
+    optionsContainer.classList.toggle("active");
   });
-});
+
+  optionsList.forEach((e) => {
+    e.addEventListener("click", () => {
+      selected.innerHTML = e.querySelector("label").innerHTML;
+      optionsContainer.classList.remove("active");
+    });
+  });
+};
