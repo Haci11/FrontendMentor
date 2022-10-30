@@ -41,17 +41,14 @@ header {
 }
 
 .bg {
-  position: absolute;
   background: url(/starter-code/assets/home/bg-pattern-header.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: absolute;
   top: -11.5rem;
-  left: -5rem;
-  right: -5rem;
   width: 458px;
   height: 458px;
-  margin: 0 auto;
   z-index: -1;
 }
 
@@ -188,14 +185,14 @@ header {
 .text--white {
   color: var(--white);
 }
-.Footer__index {
+.footer__index {
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: center;
   background-color: var(--dark-background-color);
   width: 100%;
-  height: 1100px;
+  height: 1200px;
   z-index: -1;
   background-image: url(/starter-code/assets/home/bg-pattern-footer.svg);
   background-repeat: no-repeat;
@@ -414,9 +411,63 @@ header {
   }
   header {
     justify-content: flex-start;
+    padding: 2rem;
   }
   .bg-singup {
     background: none;
+  }
+  .bg {
+    left: calc(15rem + 25%);
+    top: -10rem;
+    width: 700px;
+    height: 700px;
+  }
+  .index--information {
+    flex-direction: row;
+    text-align: start;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+  .information__img {
+    width: 300px;
+  }
+  .index--body {
+    width: 50%;
+  }
+  .logo {
+    width: 200px;
+  }
+
+  .card__body {
+    display: grid;
+    grid-template-areas:
+      "head body"
+      "footer .";
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0rem 2rem 0rem 2rem;
+  }
+  .card {
+  }
+  .card {
+    max-width: 689px;
+  }
+  .card__head {
+    grid-area: head;
+    margin-bottom: 1rem;
+  }
+  .card__text {
+    text-align: start;
+
+    grid-area: body;
+  }
+  .card__footer {
+    grid-area: footer;
+  }
+
+  .footer__index {
+    margin-top: -36rem;
+    height: 1000px;
   }
 }
 
@@ -427,6 +478,9 @@ header {
     justify-content: flex-start;
     align-items: center;
     height: 90vh;
+  }
+  header {
+    padding: 0rem;
   }
   .logo {
     width: 250px;
