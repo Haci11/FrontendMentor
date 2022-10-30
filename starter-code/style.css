@@ -552,4 +552,11 @@ header {
     width: 30vw;
     height: 100vw;
   }
+
+  .bg {
+    left: calc(35rem + 25%);
+    top: -25rem;
+    width: 1000px;
+    height: 1000px;
+  }
 }
