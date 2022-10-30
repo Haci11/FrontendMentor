@@ -453,12 +453,13 @@ header {
     max-width: 689px;
   }
   .card__head {
+    text-align: start;
+
     grid-area: head;
     margin-bottom: 1rem;
   }
   .card__text {
     text-align: start;
-
     grid-area: body;
   }
   .card__footer {
@@ -492,7 +493,50 @@ header {
     width: 455px;
   }
 
-  .information {
+  .information__img {
+    width: 500px;
+  }
+  .information__header {
+    font-size: 56px;
+  }
+
+  .cards {
+    flex-direction: row;
+  }
+  .card {
+    margin-top: 0;
+    margin: 1rem;
+    height: 425px;
+  }
+  .card__head {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .card__header {
+    font-weight: 700;
+    font-size: 56px;
+  }
+  .card__text {
+    text-align: center;
+  }
+  .card__footer {
+    text-align: center;
+  }
+
+  .card__body {
+    grid-template-areas:
+      "head"
+      "body"
+      "footer";
+    justify-content: center;
+  }
+
+  .footer__index {
+    height: 700px;
+    margin-top: -18rem;
+  }
+
+  .information--singup {
     align-items: flex-start;
     text-align: start;
   }
